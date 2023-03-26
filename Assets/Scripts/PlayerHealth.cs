@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public void Crash()
     {
         gameOverHandler.gameObject.SetActive(true);
+        gameOverHandler.EndGame();
         gameObject.SetActive(false);
     }
 }
